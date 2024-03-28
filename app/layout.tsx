@@ -3,6 +3,9 @@ import { TWKEverett } from "@/assets/fonts";
 import "./globals.css";
 import ActionsBar from "@/components/header/actions-bar";
 import NavigationBar from "@/components/header/navigation-bar";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import classNames from "classnames";
 
 export const metadata: Metadata = {
   title: "taostats",
@@ -16,15 +19,15 @@ interface IProps {
 function Layout({ children }: IProps) {
   return (
     <html>
-      <body className={TWKEverett.className}>
-        <ActionsBar
-          price={Math.random() * 1000}
-          change={Math.random()}
-          dailyVolume={Math.random() * 10 ** 7}
-          marketCap={Math.random() * 10 ** 10}
-        />
-        <NavigationBar />
-        {children}
+      <body
+        className={classNames(
+          TWKEverett.className,
+          "w-screen min-h-screen h-full flex flex-col",
+        )}
+      >
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
