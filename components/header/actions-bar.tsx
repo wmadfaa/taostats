@@ -84,7 +84,7 @@ function ActionsBar(props: ActionsBarProps) {
           Buy
         </Button>
         <Button
-          inverted
+          variant="secondary"
           iconLeft={<LucideIcon.Dynamic name="eclipse" size={17} />}
         >
           Stake

@@ -6,16 +6,18 @@ export interface ButtonProps {
   asChild?: boolean;
   iconLeft?: ReactElement;
   iconRight?: ReactElement;
+  variant?: "primary" | "secondary" | "tertiary";
   children: ReactElement | string;
-  inverted?: boolean;
+  className?: string;
 }
 
 function Button(props: ButtonProps, ref: ForwardedRef<any>) {
   const {
     asChild = false,
-    inverted = false,
+    variant = "primary",
     iconLeft,
     iconRight,
+    className,
     children,
     ...rest
   } = props;
@@ -27,7 +29,12 @@ function Button(props: ButtonProps, ref: ForwardedRef<any>) {
       ref={ref}
       className={classNames(
         "flex items-center gap-x-3 py-1.5 px-3.5 rounded-md border border-[#252525] drop-shadow text-sm font-medium text-center whitespace-nowrap hover:opacity-90 active:opacity-95",
-        inverted ? "bg-[#D9D9D9] text-black" : "bg-[#1F1F1F] text-white",
+        {
+          "bg-[#1F1F1F] text-white": variant == "primary",
+          "bg-[#D9D9D9] text-black": variant == "secondary",
+          "bg-[#2E2E2E] text-[#909090]": variant == "tertiary",
+        },
+        className,
       )}
     >
       {iconLeft}
