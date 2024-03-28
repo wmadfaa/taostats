@@ -14,7 +14,7 @@ function Footer() {
       />
       <main className="w-full h-full px-20 py-16 space-y-16">
         <FullLogoSVG height={70} />
-        <div className="w-full flex items-start">
+        <div className="w-full flex items-start justify-between">
           <div className="text-sm font-medium text-[#808080] max-w-sm">
             <p>
               τaostats is a Block Explorer and Analytics Platform for Bittensor,
@@ -46,7 +46,177 @@ function Footer() {
               </Link>
             </p>
           </div>
-          <div></div>
+          <div className="grid grid-cols-3 grid-rows-2 gap-y-16 gap-x-28">
+            <div className="space-y-7 row-span-2">
+              <h6 className="text-base font-medium text-white">Blockchain</h6>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Blocks
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Transfers
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Delegation
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Validators
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Accounts
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Subnets
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Tokenomics
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Nakamoto
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Kusanagi
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-7">
+              <h6 className="text-base font-medium text-white">Validators</h6>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Verified Validators
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Delegation/Staking
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-7">
+              <h6 className="text-base font-medium text-white">Resources</h6>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Links
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Media
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-7">
+              <h6 className="text-base font-medium text-white">Developers</h6>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Corcel API
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Taostats API
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-7">
+              <h6 className="text-base font-medium text-white">Apps</h6>
+              <ul className="space-y-2.5">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Corcel Chat
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Corcel Translate
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-sm font-medium text-[#ABABAB] hover:underline"
+                  >
+                    Corcel Mobile
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <span className="text-sm font-medium flex items-center justify-between gap-x-36">
           <p className="text-[#808080] whitespace-nowrap">
